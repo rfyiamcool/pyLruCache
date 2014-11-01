@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: pyLruCache
+Version: 0.0.1
+Summary: use Lru for dict cache.
+Home-page: http://github.com/rfyiamcool
+Author: fengyun rui
+Author-email: rfyiamcool@163.com
+License: MIT
+Description: detail in blog xiaorui.cc
+Platform: UNKNOWN
