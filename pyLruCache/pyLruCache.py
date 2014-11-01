@@ -5,7 +5,41 @@ class Node(object):
         self.me = me
         self.next = None
 
-class pyLruCache:
+class pyLruListCache:
+    def __init__(self, count):
+        self.count = count
+        self.l = []
+        self.lru = {}
+        self.tm = 0
+
+    def extend(self,t_list):
+        for i in t_list:
+            self.lru[item] = self.tm
+            self.tm += 1
+            self.append(i)
+
+    def appendd(self, item):
+        if len(self.l)>=self.count:
+            old_key = min(self.lru.keys(), key=lambda k:self.lru[k])
+            self.l.remove(old_key)
+            self.lru.pop(old_key)
+        self.l.append(item)
+        self.lru[item] = self.tm
+        self.tm += 1
+    
+    def pop(self):
+        old_key = min(self.lru.keys(), key=lambda k:self.lru[k])
+        self.l.remove(old_key)
+        return old_key
+
+    def __getitem__(self,item):
+        data = self.l[item]
+        self.lru[item] = self.tm
+        self.tm += 1
+        return data 
+
+class pyLruDictCache:
+    """ for dict """
     def __init__(self, count, pairs=[]):
         self.count = max(count, 1)
         self.d = {}

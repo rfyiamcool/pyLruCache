@@ -1,19 +1,19 @@
 pyLruCache.py
 ====
 
+###for Dict
+
 ```python
+
 
 from pyLruCache import *
 In [1]: from pyLruCache import *
 
-In [2]: a = pyLruCache(3)
+In [2]: a = pyLruListCache(3)
 
 In [3]: for i in a.iteritems():
    ...:     print i
    ...:
-
-In [4]: for i in ran
-KeyboardInterrupt
 
 In [4]:
 
@@ -75,9 +75,29 @@ In [19]: for i in a.iteritems():
 (6, [1, 2, 3])
 (7, 7)
 ```
+
+###for List
+```python
+rom pyLruCache import pyLruListCache
+
+a = pyLruListCache(5)
+
+for i in range(100):
+    a.appendd(i)
+```
+the result in debug mode 
+
+{96: 96, 92: 92, 93: 93, 94: 94, 95: 95}
+92
+{96: 96, 97: 97, 93: 93, 94: 94, 95: 95}
+93
+{96: 96, 97: 97, 98: 98, 94: 94, 95: 95}
+
 ## Installation
 pyLruCache can be installed using Pypi, `pip install pyLruCache`
 
 ## Detail
-现在暂时不支持list，有时间把列表也支持。 
+
+详情: blog.xiaorui.cc
+
 
