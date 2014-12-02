@@ -1,5 +1,6 @@
 pyLruCache.py
 ====
+###Lru适合做定量的数据新旧替换的算法
 
 ###for Dict
 
@@ -96,10 +97,12 @@ the result in debug mode
 {96: 96, 97: 97, 98: 98, 94: 94, 95: 95}
 
 ## Installation
-pyLruCache can be installed using Pypi, `pip install pyLruCache`
+pyLruCache can be installed using Pypi
+
+ `pip install pyLruCache`
 
 ## Detail
 
-详情: blog.xiaorui.cc
+详情: xiaorui.cc
 
 
