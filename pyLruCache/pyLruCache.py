@@ -1,3 +1,4 @@
+#coding:utf-8
 class Node(object):
     __slots__ = ['prev', 'next', 'me']
     def __init__(self, prev, me):

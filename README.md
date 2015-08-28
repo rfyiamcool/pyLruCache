@@ -1,8 +1,13 @@
-pyLruCache.py
-====
-###Lru适合做定量的数据新旧替换的算法
+### 项目名字
 
-###for Dict
+pyLruCache.py
+
+====
+
+### 介绍
+
+Lru适合做定量的数据新旧替换的算法,特别适合做缓存的应用，后期会考虑接入redis做存储。 
+
 
 ```python
 

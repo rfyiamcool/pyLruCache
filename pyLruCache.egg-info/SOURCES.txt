@@ -1,3 +1,5 @@
+MANIFEST.in
+README.md
 setup.py
 pyLruCache/__init__.py
 pyLruCache/pyLruCache.py
