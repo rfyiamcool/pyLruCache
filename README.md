@@ -110,4 +110,7 @@ pyLruCache can be installed using Pypi
 
 详情: xiaorui.cc
 
+## To Do List
+
+1. support redis broker
 
