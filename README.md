@@ -10,7 +10,6 @@ Lru适合做定量的数据新旧替换的算法,特别适合做缓存的应用�
 
 ```python
 
-
 from pyLruCache import *
 In [1]: from pyLruCache import *
 
@@ -81,7 +80,8 @@ In [19]: for i in a.iteritems():
 (7, 7)
 ```
 
-###for List
+### for List
+
 ```python
 rom pyLruCache import pyLruListCache
 
@@ -90,8 +90,10 @@ a = pyLruListCache(5)
 for i in range(100):
     a.appendd(i)
 ```
-the result in debug mode 
 
+stdout:
+
+```
 {96: 96, 92: 92, 93: 93, 94: 94, 95: 95}
 92
 
@@ -99,8 +101,10 @@ the result in debug mode
 93
 
 {96: 96, 97: 97, 98: 98, 94: 94, 95: 95}
+```
 
-## Installation
+## Install
+
 pyLruCache can be installed using Pypi
 
  `pip install pyLruCache`
